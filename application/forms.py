@@ -38,8 +38,7 @@ class routeForm(FlaskForm):
 
 class updateForm(FlaskForm):
 	rTitle = StringField('Routine Title',
-		validators=[DataRequired(),
-		routeCheck(message='routine already exists')])
+		validators=[DataRequired()])
 	author = StringField('Author',
 		validators=[DataRequired()])
 	description = StringField('Description', widget=TextArea(),
