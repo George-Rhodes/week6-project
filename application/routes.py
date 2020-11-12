@@ -22,7 +22,7 @@ def index():
 def add():
 	form = routeForm()
 	if form.validate_on_submit():
-		new_routine= Routine(rTitle=form.rTitle.data, auhtor=form.author.data, description=form.description.data)
+		new_routine= Routine(rTitle=form.rTitle.data, author=form.author.data, description=form.description.data)
 		db.session.add(new_routine)
 		db.session.commit()
 		return redirect(url_for('index'))
