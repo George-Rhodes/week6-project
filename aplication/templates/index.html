@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+<form action="{{ url_for('index') }}" method='POST'>
+	{{ form.orderedWith }}
+	{{ form.submit }}
+</form>
+
+
+
+
+
+
+
+
+
+		{% for routes in routeList %}
+		<br>{{routes.rTitle}}<br>
+		{{routes.author}}<br>
+		{{routes.description}}
+
+		
+		<a href="{{ url_for('delete', idNum=routes.id) }}">Delete</a><br>
+		<a href="{{ url_for('update', idNum=routes.id) }}">Update</a><br>
+		<br>
+		{% endfor %}
+
+{% endblock content %}
