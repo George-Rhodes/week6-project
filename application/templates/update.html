@@ -6,7 +6,7 @@
     {{ form.hidden_tag() }}<br>
     {{ form.rTitle }}<br>
     {{ form.author }}<br>
-    {{ form.description }}<br>
+    {{ form.description(cols="20", rows="3")}}<br>
     {% if form.rTitle.errors %}
         {% for error in form.rTitle.errors %}
             {{ error }}<br>

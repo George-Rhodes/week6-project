@@ -42,6 +42,8 @@ def update(idNum):
 		return redirect(url_for('index'))
 	elif request.method == 'GET':
 		form.rTitle.data = route.rTitle
+		form.author.data = route.author
+		form.description.data = route.description
 	
 	return render_template('update.html', title='Update your routine', form=form)
 

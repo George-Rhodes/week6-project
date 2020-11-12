@@ -9,7 +9,7 @@
                 {{ form.hidden_tag() }}
                 {{ form.rTitle.label }} {{ form.rTitle }}<br>
                 {{ form.author.label }} {{ form.author }}<br>
-                {{ form.description.label }} {{ form.description }}<br>
+                {{ form.description.label }} {{ form.description(cols="20", rows="3")}}<br>
                 {% if form.rTitle.errors %}
                 {% for error in form.rTitle.errors %}
                 <br>{{error}}

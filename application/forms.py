@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField
+from wtforms import StringField, SubmitField, SelectField, textAreaFeild
+from wtforms.widgets import TextArea
 from wtforms.validators import DataRequired, ValidationError
 from application.models import Routine
 
@@ -30,7 +31,7 @@ class routeForm(FlaskForm):
 		routeCheck(message='routine already exists')])
 	author = StringField('Author',
 		validators=[DataRequired()])
-	description = StringField('Descpriton',
+	description = StringField('Descpriton', widget=TextArea(),
 		validators=[DataRequired()])
 	submit = SubmitField('Make Routine')
 
@@ -41,6 +42,6 @@ class updateForm(FlaskForm):
 		routeCheck(message='routine already exists')])
 	author = StringField('Author',
 		validators=[DataRequired()])
-	description = StringField('Description',
+	description = StringField('Description', widget=TextArea(),
 		validators=[DataRequired()])
 	submit = SubmitField('Update Routine')
