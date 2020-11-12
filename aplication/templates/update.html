@@ -3,10 +3,12 @@
 {% block content %}
 
 <form action='' method='POST'>
-    {{ form.hidden_tag() }}
-    {{ form.task }} <br>
+    {{ form.hidden_tag() }}<br>
+    {{ form.rTitle }}<br>
+    {{ form.author }}<br>
+    {{ form.description }}<br>
     {% if form.task.errors %}
-        {% for error in form.task.errors %}
+        {% for error in form.rTitle.errors %}
             {{ error }}<br>
         {% endfor %}
     {% endif %}

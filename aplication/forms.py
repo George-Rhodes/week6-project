@@ -27,20 +27,20 @@ class orderedForm(FlaskForm):
 class routeForm(FlaskForm):
 	rTitle = StringField('Routine Title',
 		validators=[DataRequired(),
-		routeCheck(message='routine already exists')]
+		routeCheck(message='routine already exists')])
 	author = StringField('Author',
-		validators=[DataRequired()]
-	description = StringField('Task',
-		validators=[DataRequired()]
+		validators=[DataRequired()])
+	description = StringField('Descpriton',
+		validators=[DataRequired()])
 	submit = SubmitField('Make Routine')
 
 
 class updateForm(FlaskForm):
 	rTitle = StringField('Routine Title',
 		validators=[DataRequired(),
-		routeCheck(message='routine already exists')]
+		routeCheck(message='routine already exists')])
 	author = StringField('Author',
-		validators=[DataRequired()]
-	description = StringField('Task',
-		validators=[DataRequired()]
+		validators=[DataRequired()])
+	description = StringField('Description',
+		validators=[DataRequired()])
 	submit = SubmitField('Update Routine')
