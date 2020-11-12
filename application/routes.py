@@ -9,7 +9,6 @@ from application.forms import routeForm, updateForm, orderedForm
 @app.route('/', methods = ['GET', 'POST'])
 def index():
 	form = orderedForm()
-	totals = {"total": Routine.query.count(), "totalCompleted" : ToDoList.query.filter_by(status=True).count()}
 	if form.orderedWith.data == "id":
 		routeList = Routine.query.order_by(Routine.id.desc()).all()	
 	else:
