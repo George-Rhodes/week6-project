@@ -57,14 +57,14 @@ def delete(idNum):
 
 
 @app.route('/routine/<idNum>', methods=['POST', 'GET'])
-def viewRoutine(idNum):
+def routine(idNum):
 
 	return render_template('routine.html', excerList = Excer.query.filter_by(routine_id=idNum).all(), routine = Routine.query.get(idNum))
 
 
 
 @app.route('/addexcer/<idNum>', methods=['GET', 'POST'])
-def add():
+def addexcer():
 	form = excerForm()
 	if form.validate_on_submit():
 		new_excer= Excer(routine_id=idNum, set_name=form.set_name.data, level_num=form.level_num.data,
