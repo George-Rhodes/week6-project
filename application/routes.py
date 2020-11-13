@@ -78,7 +78,7 @@ def addexcer(idNum):
 def deleteEx(idNum):
 
 	ex = Excer.query.get(idNum)
-	re-id = ex.routine_id
+	re_id = ex.routine_id
 	db.session.delete(ex)
 	db.session.commit()
-	return redirect(url_for('routine', idNum=re-id))
+	return redirect(url_for('routine', idNum=re_id))
