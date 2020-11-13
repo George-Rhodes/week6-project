@@ -64,7 +64,7 @@ def routine(idNum):
 
 
 @app.route('/addexcer/<idNum>', methods=['GET', 'POST'])
-def addexcer():
+def addexcer(idNum):
 	form = excerForm()
 	if form.validate_on_submit():
 		new_excer= Excer(routine_id=idNum, set_name=form.set_name.data, level_num=form.level_num.data,
