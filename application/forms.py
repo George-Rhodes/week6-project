@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField, TextAreaField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField, IntegerField
 from wtforms.widgets import TextArea
 from wtforms.validators import DataRequired, ValidationError
 from application.models import Routine
@@ -44,3 +44,25 @@ class updateForm(FlaskForm):
 	description = StringField('Description', widget=TextArea(),
 		validators=[DataRequired()])
 	submit = SubmitField('Update Routine')
+
+
+class excerForm(FlaskForm) :
+	set_name = StringField('excersise name',
+		validators=[DataRequired()])
+	level_num = IntegerField('level of excersise',
+		validators=[DataRequired()])
+	level_type = SelectField('Order With',
+        choices=[
+            ("Kg", "Kilos"),
+            ("Resistance", "Resistance")
+        ]
+    )
+	set_length = IntegerField('length of excersise',
+		validators=[DataRequired()])
+	set_type = SelectField('Order With',
+        choices=[
+            ("sets", "set"),
+            ("Minutes", "Minutes")
+        ]
+    )
+	submit = SubmitField('Make Excersise')

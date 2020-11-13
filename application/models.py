@@ -18,4 +18,4 @@ class Excer(db.Model):
     level_num = db.Column(db.Integer, nullable = False)
     level_type = db.Column(db.String(10), nullable = False)
     set_length = db.Column(db.Integer, nullable = False)
-    set_Type = db.Column(db.String(10), nullable = False)
+    set_type = db.Column(db.String(10), nullable = False)

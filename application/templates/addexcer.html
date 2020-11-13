@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<p><h2>{{ routine.rTitle }}</h2>></p>>
+<p> --------------------------------------------- </p>
+<p>    {{routine.description}}    </p>
+<form action ='' method='POST'>
+<table style="width:70%">
+    <tr>
+        <th>excersise name</th>
+        <th>weight / level</th>
+        <th>Kg / res</th>
+        <th>no. sets / minutes</th>
+        <th>type</th>
+
+      </tr>
+      {{ form.hidden_tag() }}
+    <td>{{ form.set_name}}</td>
+    <td>{{ form.level_num }}</td>
+    <td>{{ form.level_type }}</td>
+    <td>{{ form.set_length }}</td>
+    <td>{{ form.set_type }}</td>
+    <td>{{ form.submit }}</td>>
+
+</form>
+
+
+
+
+
+{% endblock content %}

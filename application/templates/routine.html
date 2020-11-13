@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<p><h2>{{ routine.rTitle }}</h2>></p>>
+<p> --------------------------------------------- </p>
+<p>    {{routine.description}}    </p>
+
+
+
+<table style="width:70%">
+    <tr>
+        <th>excersise name</th>
+        <th>weight / level</th>
+        <th>Kg / res</th>
+        <th>no. sets / minutes</th>
+        <th>type</th>
+
+      </tr>
+{% for excer in excerList %}
+<td>{{ excer.set_name }}</td>
+<td>{{ excer.level_num }}</td>
+<td>{{ excer.level_type }}</td>
+<td>{{ excer.set_length }}</td>
+<td>{{ excer.set_type }}</td>
+{%endfor%}
+
+<form action='{{ url_for('addexcer', idNum=routine.id) }}'>
+    <input type=submit value="add excercise">
+    </form>
+
+
+
+
+{% endblock content %}

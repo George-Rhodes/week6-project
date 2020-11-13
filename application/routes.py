@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request
 from application import app, db
-from application.models import Routine
-from application.forms import routeForm, updateForm, orderedForm
+from application.models import Routine, Excer
+from application.forms import routeForm, updateForm, orderedForm, excerForm
 
 
 
@@ -53,3 +53,24 @@ def delete(idNum):
 	db.session.delete(route)
 	db.session.commit()
 	return redirect(url_for('index'))
+
+
+
+@app.route('/routine/<idNum>'methods=['POST', 'GET']))
+def viewRoutine(idNum):
+
+	return render_template('routine.html', excerList = Excer.query.filter_by(routine_id=idNum).all(), routine = Routine.query.get(idNum))
+
+
+
+@app.route('/addexcer/<idNum>', methods=['GET', 'POST'])
+def add():
+	form = excerForm()
+	if form.validate_on_submit():
+		new_excer= Excer(routine_id=idNum, set_name=form.set_name.data, level_num=form.level_num.data,
+		 level_type=form.level_type.data, set_length=form.set_length.data, set_type= form.set_type.data)
+		db.session.add(new_excer)
+		db.session.commit()
+		return redirect(url_for('routine', idNum))
+	return render_template ('addexcer.html', form=form, routine = Routine.query.get(idNum))
+
