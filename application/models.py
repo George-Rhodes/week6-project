@@ -13,7 +13,7 @@ class Routine(db.Model):
 
 class Excer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    routine_id = db.Column(db.Integer, db.ForeignKey('routine.id'), nullable=False, ondelete="CASCADE")
+    routine_id = db.Column(db.Integer, db.ForeignKey('routine.id' , ondelete="CASCADE"), nullable=False, ondelete="CASCADE")
     set_name = db.Column(db.String(50), nullable=False)
     level_num = db.Column(db.Integer, nullable = False)
     level_type = db.Column(db.String(10), nullable = False)
