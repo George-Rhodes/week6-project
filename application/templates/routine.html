@@ -26,9 +26,12 @@
 </tr>
 {%endfor%}
 
-<form action='{{ url_for('addexcer', idNum=routine.id) }}>
+<form action='{{ url_for('addexcer', idNum=routine.id) }}'>
     <input type=submit value="add excercise">
     </form>
+<form action='{{ url_for('addexcer', idNum=routine.id) }}'>
+        <input type=submit value="Add excersise">
+        </form>
 
 </table>
 
