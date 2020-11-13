@@ -17,13 +17,15 @@
 
       </tr>
 {% for excer in excerList %}
+<tr>
 <td>{{ excer.set_name }}</td>
 <td>{{ excer.level_num }}</td>
 <td>{{ excer.level_type }}</td>
 <td>{{ excer.set_length }}</td>
-<td>{{ excer.set_type }}</td><br>
+<td>{{ excer.set_type }}</td>
+</tr>
 {%endfor%}
-
+</table>
 <form action='{{ url_for('addexcer', idNum=routine.id) }}>
     <input type=submit value="add excercise">
     </form>
