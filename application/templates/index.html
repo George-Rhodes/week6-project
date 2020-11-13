@@ -12,7 +12,7 @@
 		{% for routes in routeList %}
 		<a href="{{ url_for('routine', idNum=routes.id) }}">{{routes.rTitle}}</a><br>
 		<br>
-		{{{routes.author}}<br>
+		{{routes.author}}<br>
 		<br>
 		{{routes.description}}
 
