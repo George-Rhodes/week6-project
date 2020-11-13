@@ -74,3 +74,11 @@ def addexcer(idNum):
 		return redirect(url_for('routine', idNum=idNum))
 	return render_template ('addexcer.html', form=form, routine = Routine.query.get(idNum))
 
+@app.route('/deleteEx/<idNum>')
+def deleteEx(idNum):
+
+	ex = Excer.query.get(idNum)
+	re-id = ex.routine_id
+	db.session.delete(ex)
+	db.session.commit()
+	return redirect(url_for('routine', idNum=re-id))
