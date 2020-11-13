@@ -21,10 +21,10 @@
 <td>{{ excer.level_num }}</td>
 <td>{{ excer.level_type }}</td>
 <td>{{ excer.set_length }}</td>
-<td>{{ excer.set_type }}</td>
+<td>{{ excer.set_type }}</td><br>
 {%endfor%}
 
-<form action='{{ url_for('addexcer', idNum=routine.id) }}'>
+<form action='{{ url_for('addexcer', idNum=routine.id) }}>
     <input type=submit value="add excercise">
     </form>
 
