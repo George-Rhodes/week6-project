@@ -56,7 +56,7 @@ def delete(idNum):
 
 
 
-@app.route('/routine/<idNum>'methods=['POST', 'GET']))
+@app.route('/routine/<idNum>', methods=['POST', 'GET']))
 def viewRoutine(idNum):
 
 	return render_template('routine.html', excerList = Excer.query.filter_by(routine_id=idNum).all(), routine = Routine.query.get(idNum))
