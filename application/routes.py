@@ -95,7 +95,7 @@ def updateEx(idNum):
 		form.set_length.data = ex.set_length
 		form.set_type.data = ex.set_type
 	
-	return render_template('updateEx.html', title='Update your excersise', form=form , routine = Routine.query.get(re_id)	
+	return render_template('updateEx.html', title='Update your excersise', form=form , routine = Routine.query.get(re_id))	
 
 @app.route('/deleteEx/<idNum>')
 def deleteEx(idNum):
