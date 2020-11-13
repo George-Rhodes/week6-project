@@ -25,12 +25,12 @@
 <td>{{ excer.set_type }}</td>
 </tr>
 {%endfor%}
-</table>
+
 <form action='{{ url_for('addexcer', idNum=routine.id) }}>
     <input type=submit value="add excercise">
     </form>
 
-
+</table>
 
 
 {% endblock content %}
