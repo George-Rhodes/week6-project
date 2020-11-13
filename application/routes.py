@@ -74,6 +74,29 @@ def addexcer(idNum):
 		return redirect(url_for('routine', idNum=idNum))
 	return render_template ('addexcer.html', form=form, routine = Routine.query.get(idNum))
 
+
+@app.route('/updateEx/<idNum>', methods=['POST', 'GET'])
+def updateEx(idNum):
+	form = excerForm()
+	ex= Excer.query.get(idNum)
+	re_id = ex.routine_id
+	if form.validate_on_submit():
+		ex.set_name=form.set_name.data
+		ex.level_num=form.level_num.data
+		ex.level_type=form.level_type.data
+		ex.set_length=form.set_length.data
+		ex.set_type=form.set_type.data
+		db.session.commit()
+		return redirect(url_for('routine', idNum=re_id))
+	elif request.method == 'GET':
+		form.set_name.data = ex.set_name
+		form.level_num.data = ex.level_num
+		form.level_type.dat = ex.level_type
+		form.set_length.data = ex.set_length
+		form.set_type.data = ex.set_type
+	
+	return render_template('updateEx.html', title='Update your excersise', form=form , routine = Routine.query.get(re_id)	
+
 @app.route('/deleteEx/<idNum>')
 def deleteEx(idNum):
 
