@@ -25,6 +25,9 @@
 <td style="text-align:center">{{ excer.level_type }}</td>
 <td style="text-align:center">{{ excer.set_length }}</td>
 <td style="text-align:center">{{ excer.set_type }}</td>
+<td style="text-align:center"><form action='{{ url_for('updateEx', idNum=excer.id) }}'>
+    <input type=submit value="update excercise">
+    </form></td>
 <td style="text-align:center"><form action='{{ url_for('deleteEx', idNum=excer.id) }}'>
     <input type=submit value="delete excercise">
     </form></td>
