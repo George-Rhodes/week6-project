@@ -71,6 +71,6 @@ def addexcer(idNum):
 		 level_type=form.level_type.data, set_length=form.set_length.data, set_type= form.set_type.data)
 		db.session.add(new_excer)
 		db.session.commit()
-		return redirect(url_for('routine.html', idNum=idNum))
+		return redirect(url_for('routine', idNum=idNum))
 	return render_template ('addexcer.html', form=form, routine = Routine.query.get(idNum))
 
