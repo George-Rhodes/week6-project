@@ -42,7 +42,7 @@ class TestBase(LiveServerTestCase):
         self.assertEqual(response.code, 200)
 
 
- def test_add(self):
+def test_add(self):
         """
         Test that a user can add a game if all the field are correctly filled out
         """
