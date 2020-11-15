@@ -57,9 +57,15 @@ To fulfill these requirements i decided to make an aplication made for everyone,
 
 ### Database
 This is the Entity Relationship Diagram (ERD). this is the current structure of the data base for teh the current build of teh application, it is a one to many relation shipe and stores all required information.
+
 ![Imgur](https://i.imgur.com/tO9B8Cs.png)
 
 ### CI Pipeline
+The image below represents my continuous integration pipeline with the associated frameworks and services related to them. It is a breakdown of the services and tools used to develop and deploy a well-tested, functioning program. The services I have chosen within the pipeline provide the most efficient method of rapid development to be automated and tested.
+
+![Imgur](https://i.imgur.com/WhYD2i2.png)
+
+
 
 ## Project Tracking
 
