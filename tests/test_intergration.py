@@ -42,19 +42,23 @@ class TestBase(LiveServerTestCase):
         self.assertEqual(response.code, 200)
 
 
-def test_add(self):
+
+class TestAdd(TestBase):
+
+
+    def test_add(self):
         """
-        Test that a user can add a game if all the field are correctly filled out
+        Test that a user can add a routine when all feilds are filled correctly
         """
 
-        # Click register menu link
+        # Click add menu link
         self.driver.find_element_by_xpath("/html/body/a[2]").click()
         time.sleep(1)
         test_title='uppper body work out'
         test_author='mrbig'
-        test_description= 'this is a test description of a routine'
+        test_description= 'this is a test description of a'
 
-        # Fill in registration form
+        # Fill in routine form
         self.driver.find_element_by_xpath('//*[@id="rTitle"]').send_keys(test_title)
         self.driver.find_element_by_xpath('//*[@id="author"]').send_keys(test_author)
         self.driver.find_element_by_xpath('//*[@id="description"]').send_keys(test_description)
