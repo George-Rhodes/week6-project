@@ -1,8 +1,9 @@
 # week6-project of an exercise routine 
-###usefull links
--[Trello Board]
--[website]
-##contents
+### Usefull links
+- [Trello Board](https://trello.com/b/Isjf9yth/qa-project)
+- [website](http://35.246.99.81:5000/)
+- []
+## contents
 
 
 
@@ -20,9 +21,9 @@
 
 
 
-##Brief
+## Brief
 
-###Requirements
+### Requirements
 
 
 
@@ -58,19 +59,21 @@
 ## Risk Assessment
 
 
-##Testing
+## Testing
 
 
-##Front-End Design
-
-
-
-
-##Current evaluation
-
-##Future improvements
+## Front-End Design
 
 
 
 
+## Current evaluation
 
+## Future improvements
+
+
+
+
+
+## Author
+George Rhodes
