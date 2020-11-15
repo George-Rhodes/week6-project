@@ -2,7 +2,6 @@
 ### Usefull links
 - [Trello Board](https://trello.com/b/Isjf9yth/qa-project)
 - [website](http://35.246.99.81:5000/)
-- []
 ## contents
 
 
@@ -58,7 +57,7 @@ To fulfill these requirements i decided to make an aplication made for everyone,
 
 ### Database
 This is the Entity Relationship Diagram (ERD). this is the current structure of the data base for teh the current build of teh application, it is a one to many relation shipe and stores all required information.
-[Imgur](https://i.imgur.com/jusheq4.png)
+![Imgur](https://i.imgur.com/tO9B8Cs.png)
 
 ### CI Pipeline
 
