@@ -52,7 +52,7 @@ class TestBase(LiveServerTestCase):
         time.sleep(1)
         test_title='uppper body work out'
         test_author='mrbig'
-        test_description= ''
+        test_description= 'this is a test description of a routine'
 
         # Fill in registration form
         self.driver.find_element_by_xpath('//*[@id="rTitle"]').send_keys(test_title)
