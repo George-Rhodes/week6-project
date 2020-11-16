@@ -73,23 +73,41 @@ using teh methodologies i have learnt and also using my own experince i decide t
 ![Imgur](https://i.imgur.com/k619atK.png) ![Imgur](https://i.imgur.com/XuSQSVZ.png)
 
 ## Risk Assessment
+Below is a screen shot of my risk assessment outlining potential risks giving them an impact value and detailing a proposed response to them.
 
+![Imgur](https://i.imgur.com/jbyrM4M.png)
 
 ## Testing
+Testing was done by using Pytest for unit testing in which i test tested most of my functions acheiveing an 80% as shown below the parts that was missed was updataing routines and Exercises though when doing practical tests these passed.
+![Imgur](https://i.imgur.com/ldkKVAv.png)
 
+i also carried out intergration testing and this passed sucesffully scoring 100%, though i dont have a screen shot at this current moment.
 
 ## Front-End Design
-
-
-
+my front end design of my application is very basic and minimal but fully satisfys the CRUD functionality making it a working prototype meeting the MVP requirements.
+below is a screen shot of the index page
+![Imgur](https://i.imgur.com/UJ9rujk.png)
+ below is the current state of adding a routine, and lookes very similar to updating a routine, it gives teh option of allowing teh user to view the whole description in teh text box.
+![Imgur](https://i.imgur.com/4o9QhIc.png)
+Below is an empty routine with no exercises stored inside.
+![Imgur](https://i.imgur.com/LnnYu4g.png)
+below is adding a singular exercise to the routine, alo update looks very similer to this.
+![Imgur](https://i.imgur.com/DLfEvYH.png)
+below is a populated Routine with a list exercises stored inside.
+![Imgur](https://i.imgur.com/3EpOTis.png)
 
 ## Current evaluation
 
+How i see teh current application is it is very basic using the core functions of CRUD, though this may be sucessefull in fulfilling the MVP requirments, there is much that could be improved upon. for isnatcne not allowing everyone to eddit any routine they line and having cardipn and strength training combined into one table.
+
+
 ## Future improvements
-
-
-
-
+For the nect itiratiopn of this app here are teh proposed improvemnt:
+* log in system, that only allows you to eddit teh routines associated with that account.
+* split teh excersises into 2 different tables for cardio and strength.
+* add a filter for intensities.
+* allow users to search for other users routines using a search bar.
+* allow commenting / notifications for users to interact with one and other.
 
 ## Author
 George Rhodes
