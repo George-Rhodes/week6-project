@@ -2,7 +2,6 @@
 ### Usefull links
 - [Trello Board](https://trello.com/b/Isjf9yth/qa-project)
 - [website](http://35.246.99.81:5000/)
-## contents
 
 
 
@@ -61,7 +60,7 @@ This is the Entity Relationship Diagram (ERD). this is the current structure of 
 ![Imgur](https://i.imgur.com/tO9B8Cs.png)
 
 ### CI Pipeline
-The image below represents my continuous integration pipeline with the associated frameworks and services related to them. It is a breakdown of the services and tools used to develop and deploy a well-tested, functioning program. The services I have chosen within the pipeline provide the most efficient method of rapid development to be automated and tested.
+The image below represents my continuous integration pipeline with the associated frameworks and services related to them. It is a breakdown of the services and tools used to develop and deploy a well-tested, functioning program. The services I have chosen within the pipeline provide the most efficient method of rapid development to be automated and tested. I used VSC for editing as I found it more visually pleasing and easier on the eye when edidting code
 
 ![Imgur](https://i.imgur.com/WhYD2i2.png)
 
