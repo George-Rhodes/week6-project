@@ -68,8 +68,9 @@ The image below represents my continuous integration pipeline with the associate
 
 
 ## Project Tracking
+using teh methodologies i have learnt and also using my own experince i decide to use Trello as my kanban board to visually show and track my progress of my project and sho show my workflow in completion of the current build of the application. below is a screen shot of my Trello board.
 
-
+![Imgur](https://i.imgur.com/k619atK.png) ![Imgur](https://i.imgur.com/XuSQSVZ.png)
 
 ## Risk Assessment
 
