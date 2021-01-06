@@ -33,7 +33,7 @@ def add():
 @app.route('/update/<idNum>', methods=['POST', 'GET'])
 def update(idNum):
 	form = updateForm()
-	route= Routine.query.get(idNum)Amanda Kekitinisa
+	route= Routine.query.get(idNum)
 	if form.validate_on_submit():
 		route.rTitle=form.rTitle.data
 		route.author=form.author.data
